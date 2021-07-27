@@ -4,7 +4,8 @@ won=0
 loss=0
 amount=100
 times=0
-while [ $amount -le 200 ] || [ $amount -le 0 ]
+
+while [ $amount -ne 200 ] && [ $amount -ne 0 ]
 do
 	bet=$(($RANDOM%2))
 	if [ $bet -eq 1 ]
